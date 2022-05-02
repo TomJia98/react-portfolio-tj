@@ -1,5 +1,5 @@
 import github from "../assets/GitHub-Mark-32px.png";
-import linkedIn from "../assets/Li-In-Bug.png";
+import linkedIn from "../assets/LI-In-Bug.png";
 
 export default function footer() {
   return (

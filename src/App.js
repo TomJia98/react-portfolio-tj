@@ -1,25 +1,31 @@
 import "./App.css";
+import customFooter from "./components/footer";
+import React, { useState } from "react";
+
+function ActiveSection() {
+  let [section, setSection] = useState(); //insert the content sections here
+}
+
+function handleASection(thing) {}
 
 function App() {
-  return "test";
-  //   return (
-  //     <div className="App">
-  //       <header className="App-header">
-  //         <img src={logo} className="App-logo" alt="logo" />
-  //         <p>
-  //           Edit <code>src/App.js</code> and save to reload.
-  //         </p>
-  //         <a
-  //           className="App-link"
-  //           href="https://reactjs.org"
-  //           target="_blank"
-  //           rel="noopener noreferrer"
-  //         >
-  //           Learn React
-  //         </a>
-  //       </header>
-  //     </div>
-  //   );
+  return (
+    <body>
+      <header>
+        <h1>Tom Jia</h1>
+        <div id="sectionSelection">
+          <button onClick={handleASection("about")}>About Me</button>
+          <button onClick={handleASection("portfolio")}>Portfolio</button>
+          <button onClick={handleASection("contact")}>Contact</button>
+          <button onClick={handleASection("resume")}>Resume</button>
+        </div>
+      </header>
+
+      {section}
+
+      <customFooter />
+    </body>
+  );
 }
 
 export default App;
