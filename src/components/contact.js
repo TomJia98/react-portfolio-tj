@@ -4,16 +4,16 @@ export default function contact() {
       <h3>Contact</h3>
       <div class="container">
         <label htmlFor="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Your name.." />
+        <input type="text" id="name" name="name" placeholder="Your name" />
 
         <label htmlFor="email">Email Address</label>
-        <input type="text" id="email" name="email" placeholder="Your email.." />
+        <input type="text" id="email" name="email" placeholder="Your email" />
 
         <label htmlFor="subject">Subject</label>
         <textarea
           id="subject"
           name="subject"
-          placeholder="Write something.."
+          placeholder="Tell me what you think!"
         ></textarea>
 
         <input type="submit" value="Submit" />
