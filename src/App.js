@@ -9,6 +9,24 @@ import Resume from "./components/resume";
 export default function App() {
   let [section, setSection] = useState("about");
 
+  const changeActive = (e) => {
+    switch (e.target.dataset.section) {
+      case "about":
+        setSection("about");
+        break;
+      case "portfolio":
+        setSection("portfolio");
+        break;
+      case "contact":
+        setSection("contact");
+        break;
+      case "resume":
+        setSection("resume");
+        break;
+    }
+    console.log(e.target.dataset.section);
+  };
+
   const renderSection = (section) => {
     switch (section) {
       case "about":
@@ -24,15 +42,23 @@ export default function App() {
 
   return (
     <div>
-      <header>
+      <div>
         <h1>Tom Jia</h1>
         <div id="sectionSelection">
-          <button onClick={setSection("about")}>About Me</button>
-          <button onClick={setSection("portfolio")}>Portfolio</button>
-          <button onClick={setSection("contact")}>Contact</button>
-          <button onClick={setSection("resume")}>Resume</button>
+          <button onClick={changeActive} data-section="about">
+            About Me
+          </button>
+          <button onClick={changeActive} data-section="portfolio">
+            Portfolio
+          </button>
+          <button onClick={changeActive} data-section="contact">
+            Contact
+          </button>
+          <button onClick={changeActive} data-section="resume">
+            Resume
+          </button>
         </div>
-      </header>
+      </div>
 
       {renderSection(section)}
 
