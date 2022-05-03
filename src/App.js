@@ -1,31 +1,42 @@
 import "./App.css";
-import customFooter from "./components/footer";
+import CustomFooter from "./components/footer";
 import React, { useState } from "react";
+import AboutMe from "./components/aboutme";
+import Contact from "./components/contact";
+import Portfolio from "./components/portfolio";
+import Resume from "./components/resume";
 
-function ActiveSection() {
-  let [section, setSection] = useState(); //insert the content sections here
-}
+export default function App() {
+  let [section, setSection] = useState("about");
 
-function handleASection(thing) {}
+  const renderSection = (section) => {
+    switch (section) {
+      case "about":
+        return <AboutMe />;
+      case "portfolio":
+        return <Portfolio />;
+      case "contact":
+        return <Contact />;
+      case "resume":
+        return <Resume />;
+    }
+  };
 
-function App() {
   return (
-    <body>
+    <div>
       <header>
         <h1>Tom Jia</h1>
         <div id="sectionSelection">
-          <button onClick={handleASection("about")}>About Me</button>
-          <button onClick={handleASection("portfolio")}>Portfolio</button>
-          <button onClick={handleASection("contact")}>Contact</button>
-          <button onClick={handleASection("resume")}>Resume</button>
+          <button onClick={setSection("about")}>About Me</button>
+          <button onClick={setSection("portfolio")}>Portfolio</button>
+          <button onClick={setSection("contact")}>Contact</button>
+          <button onClick={setSection("resume")}>Resume</button>
         </div>
       </header>
 
-      {section}
+      {renderSection(section)}
 
-      <customFooter />
-    </body>
+      <CustomFooter />
+    </div>
   );
 }
-
-export default App;
