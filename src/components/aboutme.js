@@ -1,3 +1,5 @@
+import profilePicture from "../assets/profile_picture.jpg";
+
 export default function about() {
   return (
     <div>
@@ -6,8 +8,9 @@ export default function about() {
         Hello and welcome to my Portfolio!
         <img
           id="profile-pic"
-          src="./assets/profile_picture.jpg"
+          src={profilePicture}
           alt="picture of me"
+          style={{ height: "20em", margin: "5em" }}
         />
         <br /> <br />
         My name is Tom Jia and I am a dedicated Full Stack Developer currently
