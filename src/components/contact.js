@@ -1,22 +1,40 @@
 export default function contact() {
+  const onSubmit = (e) => {
+    e.preventDefault();
+  };
   return (
     <div>
       <h3>Contact</h3>
-      <div class="container">
-        <label htmlFor="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Your name" />
+      <div className="container">
+        <form onSubmit={onSubmit}>
+          <label htmlFor="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your name"
+            required
+          />
 
-        <label htmlFor="email">Email Address</label>
-        <input type="text" id="email" name="email" placeholder="Your email" />
+          <label htmlFor="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your email"
+            required
+          />
 
-        <label htmlFor="subject">Subject</label>
-        <textarea
-          id="subject"
-          name="subject"
-          placeholder="Tell me what you think!"
-        ></textarea>
+          <label htmlFor="subject">Subject</label>
+          <textarea
+            required
+            id="subject"
+            name="subject"
+            placeholder="Talk to me!"
+          ></textarea>
 
-        <input type="submit" value="Submit" />
+          <input type="submit" value="Submit" />
+        </form>
       </div>
     </div>
   );

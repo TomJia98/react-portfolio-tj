@@ -2,20 +2,29 @@ import github from "../assets/GitHub-Mark-64px.png";
 
 export default function porfolioInsert(props) {
   const style = {
-    background: {
-      backgroundImage: props.backgroundImage,
-    },
+    // background: {
+    //   backgroundImage: props.background,
+    // },
     github: {
       height: "50px",
       width: "50px",
     },
   };
   //might need to add some more styling to this once the component is working properly,
+  //such as hiding the text until hover
 
   return (
-    <div style={style.background}>
+    <div
+      style={{
+        backgroundImage: `url(${props.background})`,
+        backgroundSize: "22em 15em",
+        backgroundRepeat: "no-repeat",
+        height: "15em",
+        width: "22em",
+        margin: "5em",
+      }}
+    >
       <div>
-        test
         <a href={props.liveApp}>
           <h3>{props.appName}</h3>
         </a>
