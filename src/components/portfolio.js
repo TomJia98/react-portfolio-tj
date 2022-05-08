@@ -10,38 +10,39 @@ const projects = [
   {
     appName: "Junglr",
     background: junglrPhoto,
-    liveApp: "",
-    github: "",
+    liveApp: "https://project-2-dw.herokuapp.com/",
+    github: "https://github.com/TomJia98/Project-2",
   },
   {
     appName: "TuneSplice",
     background: tunesplicePhoto,
-    liveApp: "",
-    github: "",
+    liveApp: "https://tomjia98.github.io/Project_Wunners/",
+    github: "https://github.com/TomJia98/Project_Wunners",
   },
   {
     appName: "My Portfolio",
     background: portfolioPhoto,
-    liveApp: "",
-    github: "",
+    liveApp: "https://tomjia98.github.io/Portfolio_TJ/",
+    github: "https://github.com/TomJia98/Portfolio_TJ",
   },
   {
     appName: "Employee Tracker",
     background: empoyeePhoto,
-    liveApp: "",
-    github: "",
+    liveApp:
+      "https://drive.google.com/file/d/1Awc_5PFn5LFnEkY5mu4kU-hMt-W6VNsC/view?usp=sharing",
+    github: "https://github.com/TomJia98/employee-tracker",
   },
   {
     appName: "Weather Scheduler",
     background: WeatherPhoto,
-    liveApp: "",
-    github: "",
+    liveApp: "https://tomjia98.github.io/weather_scheduler_TJ/",
+    github: "https://github.com/TomJia98/weather_scheduler_TJ",
   },
   {
     appName: "Code Quiz",
     background: quizPhoto,
-    liveApp: "",
-    github: "",
+    liveApp: "https://tomjia98.github.io/code_quiz_TJ/",
+    github: "https://github.com/TomJia98/code_quiz_TJ",
   },
 ]; // an array of object for all the projects
 //add the content into this ^^^ object, as well as imported background images

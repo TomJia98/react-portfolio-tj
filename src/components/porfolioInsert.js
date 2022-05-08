@@ -1,10 +1,10 @@
 import github from "../assets/GitHub-Mark-64px.png";
+import { useState } from "react";
 
 export default function porfolioInsert(props) {
+  const [IsShown, setIsShown] = useState(false);
+
   const style = {
-    // background: {
-    //   backgroundImage: props.background,
-    // },
     github: {
       height: "50px",
       width: "50px",
@@ -15,6 +15,8 @@ export default function porfolioInsert(props) {
 
   return (
     <div
+      onMouseEnter={() => setIsShown(true)}
+      onMouseLeave={() => setIsShown(false)}
       style={{
         backgroundImage: `url(${props.background})`,
         backgroundSize: "22em 15em",
@@ -24,14 +26,16 @@ export default function porfolioInsert(props) {
         margin: "5em",
       }}
     >
-      <div>
-        <a href={props.liveApp}>
-          <h3>{props.appName}</h3>
-        </a>
-        <a href={props.github}>
-          <img src={github} style={style.github} alt="liveApp"></img>
-        </a>
-      </div>
+      {IsShown && (
+        <div>
+          <a href={props.liveApp}>
+            <h3>{props.appName}</h3>
+          </a>
+          <a href={props.github}>
+            <img src={github} style={style.github} alt="liveApp"></img>
+          </a>
+        </div>
+      )}
     </div>
   );
 }
