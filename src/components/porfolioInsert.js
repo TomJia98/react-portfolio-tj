@@ -1,8 +1,8 @@
 import github from "../assets/GitHub-Mark-64px.png";
-import { useState } from "react";
+import React, { useState } from "react";
 //import whats needed
-export default function porfolioInsert(props) {
-  const [IsShown, SetIsShown] = useState(false);
+export default function PorfolioInsert(props) {
+  let [IsShown, setIsShown] = useState(false);
   //setting up the hooks (this isnt the correct way to do it, as the hook is in a component)
   const style = {
     github: {
@@ -13,8 +13,8 @@ export default function porfolioInsert(props) {
 
   return (
     <div
-      onMouseEnter={() => SetIsShown(true)}
-      onMouseLeave={() => SetIsShown(false)}
+      onMouseEnter={() => setIsShown(true)}
+      onMouseLeave={() => setIsShown(false)}
       style={{
         backgroundImage: `url(${props.background})`,
         backgroundSize: "22em 15em",
@@ -25,7 +25,7 @@ export default function porfolioInsert(props) {
         border: "2px solid black",
       }}
     >
-      {IsShown && ( //if SetIsShown is true, e.g, element is hovered, display links
+      {IsShown && ( //if setIsShown is true, e.g, element is hovered, display links
         <div
           style={{
             display: "flex",
