@@ -1,20 +1,62 @@
 export default function header(props) {
+  function isSelected(section) {
+    if (section === props.active) {
+      return buttonStyleSelected;
+    } else {
+      return buttonStyleNotSelected;
+    }
+  }
+
+  const buttonStyleSelected = {
+    color: "white",
+    margin: "2em",
+    fontSize: "2em",
+    cursor: "pointer",
+  };
+  const buttonStyleNotSelected = {
+    margin: "2em",
+    fontSize: "2em",
+    cursor: "pointer",
+  };
   return (
-    <header>
-      <h1>Tom Jia</h1>
+    <header
+      style={{
+        display: "flex",
+        justifyContent: "space-evenly",
+        alignItems: "baseline",
+        borderBottom: "1px solid black",
+      }}
+    >
+      <h1 style={{ flexGrow: "0", fontSize: "3em" }}>Tom Jia</h1>
       <div id="sectionSelection">
-        <button onClick={props.changeActive} data-section="about">
+        <a
+          onClick={props.changeActive}
+          style={isSelected("about")}
+          data-section="about"
+        >
           About Me
-        </button>
-        <button onClick={props.changeActive} data-section="portfolio">
+        </a>
+        <a
+          onClick={props.changeActive}
+          style={isSelected("portfolio")}
+          data-section="portfolio"
+        >
           Portfolio
-        </button>
-        <button onClick={props.changeActive} data-section="contact">
+        </a>
+        <a
+          onClick={props.changeActive}
+          style={isSelected("contact")}
+          data-section="contact"
+        >
           Contact
-        </button>
-        <button onClick={props.changeActive} data-section="resume">
+        </a>
+        <a
+          onClick={props.changeActive}
+          style={isSelected("resume")}
+          data-section="resume"
+        >
           Resume
-        </button>
+        </a>
       </div>
     </header>
   );

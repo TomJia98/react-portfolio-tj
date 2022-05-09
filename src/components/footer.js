@@ -4,11 +4,12 @@ import linkedIn from "../assets/LI-In-Bug.png";
 const imageSize = {
   height: "4em",
   width: "4em",
-  margin: "2em",
+  marginLeft: "2em",
 };
 export default function footer() {
   return (
     <footer
+      id="footer"
       style={{
         display: "flex",
         justifyContent: "center",

@@ -41,8 +41,8 @@ export default function App() {
   };
 
   return (
-    <div>
-      <Header changeActive={changeActive} />
+    <div id="content">
+      <Header changeActive={changeActive} active={section} />
 
       {renderSection(section)}
 

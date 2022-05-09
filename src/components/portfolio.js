@@ -48,7 +48,6 @@ const projects = [
 //add the content into this ^^^ object, as well as imported background images
 
 function addProjects() {
-  console.log(projects.length);
   let arr = [];
   for (let i = 0; i < projects.length; i++) {
     arr.push(<PortfolioInsert {...projects[i]} />);
