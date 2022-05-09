@@ -5,6 +5,7 @@ import AboutMe from "./components/aboutme";
 import Contact from "./components/contact";
 import Portfolio from "./components/portfolio";
 import Resume from "./components/resume";
+import Header from "./components/header";
 
 export default function App() {
   let [section, setSection] = useState("about");
@@ -24,7 +25,6 @@ export default function App() {
         setSection("resume");
         break;
     }
-    console.log(e.target.dataset.section);
   };
 
   const renderSection = (section) => {
@@ -42,23 +42,7 @@ export default function App() {
 
   return (
     <div>
-      <div>
-        <h1>Tom Jia</h1>
-        <div id="sectionSelection">
-          <button onClick={changeActive} data-section="about">
-            About Me
-          </button>
-          <button onClick={changeActive} data-section="portfolio">
-            Portfolio
-          </button>
-          <button onClick={changeActive} data-section="contact">
-            Contact
-          </button>
-          <button onClick={changeActive} data-section="resume">
-            Resume
-          </button>
-        </div>
-      </div>
+      <Header changeActive={changeActive} />
 
       {renderSection(section)}
 
