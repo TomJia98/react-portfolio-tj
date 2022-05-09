@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-portfolio-tj/static/css/main.01459ce1.css",
+    "main.js": "/react-portfolio-tj/static/js/main.522b49de.js",
+    "static/js/787.a2cb61a6.chunk.js": "/react-portfolio-tj/static/js/787.a2cb61a6.chunk.js",
+    "static/media/TuneSplice.png": "/react-portfolio-tj/static/media/TuneSplice.6e7ddaf4d6152a74b96d.png",
+    "static/media/profile_picture.jpg": "/react-portfolio-tj/static/media/profile_picture.54f79dc5787298677960.jpg",
+    "static/media/junglr.png": "/react-portfolio-tj/static/media/junglr.47f7c5f6b20f86ebe607.png",
+    "static/media/desktop.png": "/react-portfolio-tj/static/media/desktop.580beb901ca1e3847f60.png",
+    "static/media/weatherScheduler.png": "/react-portfolio-tj/static/media/weatherScheduler.a695229bcaeab3231ed7.png",
+    "static/media/quiz.png": "/react-portfolio-tj/static/media/quiz.9cef26674935351d6f6e.png",
+    "static/media/employeetracker.png": "/react-portfolio-tj/static/media/employeetracker.9dadcb62798d1817eaba.png",
+    "index.html": "/react-portfolio-tj/index.html",
+    "main.01459ce1.css.map": "/react-portfolio-tj/static/css/main.01459ce1.css.map",
+    "main.522b49de.js.map": "/react-portfolio-tj/static/js/main.522b49de.js.map",
+    "787.a2cb61a6.chunk.js.map": "/react-portfolio-tj/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.01459ce1.css",
+    "static/js/main.522b49de.js"
+  ]
+}
