@@ -37,6 +37,7 @@ export default function porfolioInsert(props) {
           }}
         >
           <a
+            target="_blank"
             href={props.liveApp}
             style={{
               textDecoration: "none",
@@ -46,7 +47,7 @@ export default function porfolioInsert(props) {
           >
             <h3>{props.appName}</h3>
           </a>
-          <a href={props.github}>
+          <a target="_blank" href={props.github}>
             <img src={github} style={style.github} alt="liveApp"></img>
           </a>
         </div>

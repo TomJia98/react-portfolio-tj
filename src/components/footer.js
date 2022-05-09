@@ -15,7 +15,7 @@ export default function footer() {
         justifyContent: "center",
       }}
     >
-      <a href="https://github.com/TomJia98">
+      <a target="_blank" href="https://github.com/TomJia98">
         <img
           src={github}
           className="logo"
@@ -23,7 +23,7 @@ export default function footer() {
           style={imageSize}
         ></img>
       </a>
-      <a href="https://www.linkedin.com/in/tom-jia-222b50226/">
+      <a target="_blank" href="https://www.linkedin.com/in/tom-jia-222b50226/">
         <img
           src={linkedIn}
           className="logo"
