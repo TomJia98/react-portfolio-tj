@@ -3,7 +3,7 @@ export default function contact() {
     fontSize: "1.5em",
   };
   const onSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault(); //stops the page from resetting on submit
   };
   return (
     <div style={{ display: "flex", justifyContent: "center" }}>

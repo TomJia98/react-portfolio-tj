@@ -1,5 +1,6 @@
 export default function header(props) {
   function isSelected(section) {
+    //checks to see which section is active, and changes the style of the headers to match
     if (section === props.active) {
       return buttonStyleSelected;
     } else {

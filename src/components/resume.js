@@ -26,6 +26,7 @@ export default function resume() {
         <a
           target="_blank"
           href="https://docs.google.com/document/d/1fwuvSm7mSrBTL4na9VjABxoBiqREuzHM/edit?usp=sharing&ouid=110845975702977133833&rtpof=true&sd=true"
+          style={{ fontSize: "1.2em" }}
         >
           Check out my Resume
         </a>

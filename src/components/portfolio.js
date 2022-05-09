@@ -44,16 +44,14 @@ const projects = [
     liveApp: "https://tomjia98.github.io/code_quiz_TJ/",
     github: "https://github.com/TomJia98/code_quiz_TJ",
   },
-]; // an array of object for all the projects
-//add the content into this ^^^ object, as well as imported background images
-
+]; // all the projects, dynamically adds them if more are added
 function addProjects() {
   let arr = [];
   for (let i = 0; i < projects.length; i++) {
     arr.push(<PortfolioInsert {...projects[i]} />);
   }
   return arr;
-}
+} //loops through the portfolio array and adds an insert into the html for each
 export default function portfolio() {
   return (
     <div

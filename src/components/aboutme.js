@@ -3,7 +3,6 @@ import profilePicture from "../assets/profile_picture.jpg";
 export default function about() {
   return (
     <div style={{ margin: "20px" }}>
-      <h2>About Me </h2>
       <p style={{ fontSize: "1.4em" }}>
         <img
           id="profile-pic"
@@ -16,9 +15,9 @@ export default function about() {
           }}
         />
         <br />
-        Hello and welcome to my Portfolio! My name is Tom Jia and I am a
-        dedicated Full Stack Developer currently studying at the University of
-        Western Australia. <br />
+        Hello and welcome to my Portfolio! <br />
+        My name is Tom Jia and I am a dedicated Full Stack Developer currently
+        studying at the University of Western Australia. <br />
         <br />
         I found an interest in coding back in 2018 after I watch YouTube Evil
         Mastermind Micheal Reeves using facial recognition software to <br />

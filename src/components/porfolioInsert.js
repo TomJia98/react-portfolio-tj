@@ -1,17 +1,15 @@
 import github from "../assets/GitHub-Mark-64px.png";
 import { useState } from "react";
-
+//import whats needed
 export default function porfolioInsert(props) {
   const [IsShown, SetIsShown] = useState(false);
-
+  //setting up the hooks (this isnt the correct way to do it, as the hook is in a component)
   const style = {
     github: {
       height: "50px",
       width: "50px",
     },
   };
-  //might need to add some more styling to this once the component is working properly,
-  //such as hiding the text until hover
 
   return (
     <div
@@ -27,7 +25,7 @@ export default function porfolioInsert(props) {
         border: "2px solid black",
       }}
     >
-      {IsShown && (
+      {IsShown && ( //if SetIsShown is true, e.g, element is hovered, display links
         <div
           style={{
             display: "flex",
@@ -55,9 +53,3 @@ export default function porfolioInsert(props) {
     </div>
   );
 }
-
-//call this component with 4 props, background (an image of the app), liveApp (a link to the deployed website) and github, a link to the github page
-//and appName
-//each one need to have a background picture of the project,
-// a github image that links to the respective page,
-// and a title that links to the deployed app, all showing when you hover over the slide

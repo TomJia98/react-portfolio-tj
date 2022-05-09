@@ -1,6 +1,7 @@
 html,body ,#content,#root {
   margin:0;
   height:100%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #content {
